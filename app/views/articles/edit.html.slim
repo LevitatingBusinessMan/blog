@@ -1,0 +1,5 @@
+h1 Edit article
+= render "form", article: @article
+
+br
+= link_to "FUCKING DISINTEGRATE THAT SHIT", article_path(@article), method: :delete, data: { confirm: "Are you sure?" }

@@ -1,0 +1,50 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+
+h1#header {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 60px;
+	text-align: center;
+}
+
+div#content {
+	margin-left: 25%;
+	margin-right: 25%;
+}
+
+a#back {
+	font-size: 30px;
+	padding: 20px;
+}
+
+div.article_preview {
+	p.body_preview {
+		word-wrap: break-word;
+	}
+	.title a {
+		color: #7d9ada;
+		font-size: 16px;
+	}
+	.title a:visited {
+		color: #ad7dda;
+	}
+}
+
+div.article_content {
+	word-wrap: break-word;
+	font-family: 'Merriweather', serif;
+	line-height: 20px;
+
+	strong, h1, h2, h3, h4, h5, h6 {
+		color: #373d49;
+	}
+
+	a {
+		color: #7d9ada;
+	}
+
+}

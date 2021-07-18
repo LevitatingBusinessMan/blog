@@ -1,0 +1,6 @@
+a#back href="/" Terug
+
+div#content
+	h1#header = @article.title
+
+	div.article_content == markdown(@article.body)
