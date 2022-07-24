@@ -58,3 +58,20 @@ div.article_content {
 	}
 
 }
+
+div#login {
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	margin: 20px;
+}
+
+#articlebuttons {
+	position: absolute;
+	bottom: 20px;
+	right: 50%;
+}
+
+div #login {
+	display: inline;
+}

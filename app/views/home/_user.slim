@@ -1,0 +1,6 @@
+div#login
+	- if session[:user]
+		span#user= session[:user] + " "
+		a href="/logout" logout
+	- else
+		a href="/login" login

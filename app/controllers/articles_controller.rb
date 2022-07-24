@@ -1,4 +1,6 @@
 class ArticlesController < ApplicationController
+  before_action :require_login, except: [:show]
+
   def new
     @article = Article.new
   end

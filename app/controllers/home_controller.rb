@@ -12,4 +12,21 @@ class HomeController < ApplicationController
     end
   end
 
+  def login
+  end
+
+  def authenticate
+    if params[:username] == "admin" && params[:password] == "admin"
+      session[:user] = "admin"
+      redirect_to action: "index"
+    else
+      redirect_to action: "login"
+    end
+  end
+
+  def logout
+    session[:user] = nil
+    redirect_to action: "index"
+  end
+
 end

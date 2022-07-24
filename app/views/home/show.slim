@@ -4,3 +4,9 @@ div#content
 	h1#header = @article.title
 
 	div.article_content == markdown(@article.body)
+
+div#articlebuttons
+	= link_to "Edit", edit_article_path(@article)
+
+
+== render "user"
