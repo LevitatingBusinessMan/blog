@@ -7,7 +7,8 @@ div#content
 			= article.created_at.to_s(:db).split(" ")[0]
 			p.body_preview = article.body.length > 200 ? article.body[..196].chomp + "..." : article.body
 
-div#articlebuttons
-	= link_to "New", new_article_path
+- logged_in?
+	div#articlebuttons
+		= link_to "New", new_article_path
 
 == render "user"
