@@ -2,17 +2,13 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
-
-body {
-	background-color: #f5f5f5;
-}
 
 h1#header {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 60px;
 	text-align: center;
+	margin: 0;
+	padding: 40px 0 40px 0;
 }
 
 div#content {
@@ -23,6 +19,7 @@ div#content {
 a#back {
 	font-size: 30px;
 	padding: 20px;
+	position: absolute;
 }
 
 a {
@@ -57,7 +54,20 @@ div.article_content {
 		color: #7d9ada;
 	}
 
+	padding-bottom: 10%;
+
+	p code {
+		color: #ea2626;
+		background-color: #d2e6e6;
+		padding: 3px;
+		border-radius: 7px;
+	}
+	mark {
+		padding: 3px;
+	}
 }
+
+
 
 div#login {
 	position: absolute;

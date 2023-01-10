@@ -1,4 +1,8 @@
-a#back href="/" Back
+== render "shared/back"
+
+script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"
+link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css"
+script hljs.highlightAll();
 
 div#content
 	h1#header = @article.title
