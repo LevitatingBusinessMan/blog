@@ -5,7 +5,7 @@ div#content
 
 	div.article_content == markdown(@article.body)
 
-- logged_in?
+- if logged_in?
 	div#articlebuttons
 		= link_to "Edit", edit_article_path(@article)
 
