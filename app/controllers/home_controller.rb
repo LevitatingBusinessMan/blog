@@ -16,11 +16,18 @@ class HomeController < ApplicationController
   end
 
   def authenticate
-    if params[:username] == "admin" && params[:password] == "admin"
-      session[:user] = "admin"
-      redirect_to action: "index"
+    if User.exists?(username: params[:username])
+      user = User.where(username: params[:username]).first
+      if user.authenticate(params[:password])
+        session[:user] = params[:username]
+        redirect_to action: "index"
+      else
+        @message = "Credentials incorrect"
+        render :login
+      end
     else
-      redirect_to action: "login"
+      @message = "User not found"
+      render :login
     end
   end
 
