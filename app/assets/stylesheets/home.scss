@@ -2,12 +2,16 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
+@import url('https://cdn.jsdelivr.net/npm/hack-font@3/build/web/hack-subset.css');
+
 h1#header {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 60px;
 	text-align: center;
 	margin: 0;
 	padding: 20px 0 40px 0;
+	font-weight: 400;
+	word-wrap: break-word;
 }
 
 div#content {
@@ -21,8 +25,9 @@ div#content {
 
 a#back {
 	font-size: 30px;
-	padding: 20px;
+	padding-left: 20px;
 	position: absolute;
+	top: -20px;
 }
 
 a {
@@ -49,7 +54,7 @@ div.article_content {
 	font-family: 'Merriweather', serif;
 	line-height: 20px;
 
-	strong, h1, h2, h3, h4, h5, h6 {
+	h1, h2, h3, h4, h5, h6 {
 		color: #373d49;
 	}
 
@@ -57,17 +62,33 @@ div.article_content {
 		color: #7d9ada;
 	}
 
+
 	padding-bottom: 10%;
 
 	p code {
-		color: #ea2626;
-		background-color: #d2e6e6;
+		// color: #ea2626;
+		// background-color: #d2e6e6;
+		color: #ffc273;
+		background-color: #4c4f4f;
 		padding: 3px;
 		border-radius: 7px;
 	}
 	mark {
-		padding: 3px;
+		padding: 2px;
+		border-radius: 6px;
 	}
+
+	blockquote {
+		margin: 0;
+		padding: 0 0 0 10px;
+		border-left: 2px solid gray;
+		color: #464646;
+	}
+
+	pre code {
+		font-family: Hack;
+	}
+
 }
 
 
