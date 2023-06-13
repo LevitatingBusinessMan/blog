@@ -1,4 +1,6 @@
-# README
+# LevitatingBusinessMan's blog
+
+This is the backend for my blog. Don't look at this if you want to know how to use Rails properly.
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
