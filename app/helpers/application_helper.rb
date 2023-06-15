@@ -10,7 +10,7 @@ module ApplicationHelper
 		highlight: true,
 		strikethrough: true,
 		underline: true,
-		autolink: true,
+		autolink: false,
 		disable_indented_code_blocks: true,
 		no_intra_emphasis: true,
 	)
