@@ -13,6 +13,8 @@ module ApplicationHelper
 		autolink: false,
 		disable_indented_code_blocks: true,
 		no_intra_emphasis: true,
+		space_after_headers: true,
+		hard_wrap: true,
 	)
 	def markdown(source)
 		@@redcarpet.render(source)

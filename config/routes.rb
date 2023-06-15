@@ -9,6 +9,9 @@ Rails.application.routes.draw do
 
   get "/:id", to: "home#show"
 
+  # Endpoint for rendering markdown
+  post "/articles/carpet", to: "articles#carpet"
+
   resources :articles
 
 end

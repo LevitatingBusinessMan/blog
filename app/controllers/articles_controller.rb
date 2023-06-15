@@ -1,5 +1,6 @@
 class ArticlesController < ApplicationController
   before_action :require_login, except: [:show]
+  skip_before_action :verify_authenticity_token, only: [:carpet,]
 
   def new
     @article = Article.new
@@ -38,6 +39,10 @@ class ArticlesController < ApplicationController
     @article.destroy
 
     redirect_to root_path
+  end
+
+  def carpet
+    render plain: helpers.markdown(request.body.read)
   end
   
   private
