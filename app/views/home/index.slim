@@ -2,12 +2,14 @@
 
 div#content
 	h1#header LevitatingBusinessMan's blog
-
 	- @articles.each do |article|
 		div.article_preview
 			div.title
-				= link_to article.title , article
-				span = !article.visible ? " (invisible)" : ""
+				- if article.title.start_with? "<HTB>"
+					= image_tag "htb", class:"htb"
+				= link_to article.title.gsub(/<\w+>/,"").strip! , article
+				- if !article.visible
+					span= " (invisible)"
 			= article.created_at.to_date.to_s
 			p.body_preview = article.body.length > 200 ? article.body[..196].chomp + "..." : article.body
 

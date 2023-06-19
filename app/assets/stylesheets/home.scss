@@ -48,15 +48,34 @@ a {
 	color: #7d9ada;
 }
 
+div#article_title .htb {
+	width: 31px;
+	position: relative;
+	top: 4px;
+	margin-right: 5px;
+	border-radius: 50px;
+	padding-bottom: 0px;
+	display: inline;
+}
+
 div.article_preview {
 	font-family: 'Merriweather', serif;
+
+	.title .htb {
+		width: 23px;
+		position: relative;
+		top: 7px;
+		margin-right: 5px;
+		border-radius: 27px;
+		padding-bottom: 2px;
+	}
 
 	p.body_preview {
 		word-wrap: break-word;
 	}
 	.title a {
 		color: #7d9ada;
-		font-size: 16px;
+		font-size: 19px;
 	}
 	.title a:visited {
 		color: #ad7dda;
@@ -69,6 +88,7 @@ h1#article_header {
 	line-height: 36px;
 	color: #373d49;
 	margin-top: 10px;
+	display: inline;
 }
 
 div#login {

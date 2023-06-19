@@ -6,7 +6,10 @@ script hljs.highlightAll();
 = stylesheet_link_tag "agate.min.css"
 
 div#content
-	h1#article_header = @article.title
+	div#article_title
+		- if @article.title.start_with? "<HTB>"
+			= image_tag "htb", class:"htb"
+		h1#article_header = @article.title.gsub(/<\w+>/,"").strip!
 
 	div.article_content == markdown(@article.body)
 
