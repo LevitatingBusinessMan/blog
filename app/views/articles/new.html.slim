@@ -1,37 +1,7 @@
 a href="/" Back
 
-= javascript_include_tag "highlight.min.js"
-= stylesheet_link_tag "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/agate.min.css"
-
 h1 New article
 == render "form", article: @article
 button#preview_button onclick="update_preview()" preview
 
-div.article_content
-
-scss:
-	div.article_content {
-		background-color: #ddd8c6;
-		width: 50%;
-		word-wrap: break-word;
-		padding: 10px;
-		display: inline-block;
-		position: absolute;
-		margin: 20px;
-		margin-right: 100px;
-		right: 0;
-		top: 0;
-	}
-
-javascript:
-	body = document.getElementById("article_body")
-	preview = document.getElementsByClassName("article_content")[0]
-	body.onchange = update_preview
-	function update_preview() {
-		console.log("Carpeting")
-		fetch("/articles/carpet", {method: "post", body: body.value}).then(res => res.text().then(t => {
-			preview.innerHTML = t
-			hljs.highlightAll()
-		}))
-	}
-
+= render "preview"
