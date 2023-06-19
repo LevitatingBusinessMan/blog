@@ -7,8 +7,7 @@ script hljs.highlightAll();
 
 div#content
 	div#article_title
-		- if @article.title.start_with? "<HTB>"
-			= image_tag "htb.png", class:"htb"
+		== render "title_tags", article: @article
 		h1#article_header = @article.title.gsub(/<\w+>/,"").strip!
 
 	div.article_content == markdown(@article.body)
