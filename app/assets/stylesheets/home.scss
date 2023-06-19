@@ -2,8 +2,6 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
-@import url('https://cdn.jsdelivr.net/npm/hack-font@3/build/web/hack-subset.css');
-
 h1#header {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 60px;
@@ -13,49 +11,6 @@ h1#header {
 	font-weight: 400;
 	word-wrap: break-word;
 	color: #1f2229;
-}
-
-div#content {
-	margin-left: 25%;
-	margin-right: 25%;
-	padding: 10px;
-	// margin-top: 20px;
-	min-height: 90%;
-	// padding-bottom: 40px;
-	position: relative;
-
-	div#dates p {
-		font-size: 13px;
-		margin: 0;
-	}
-
-	a#contact {
-		position: absolute;
-		right: 12px;
-		bottom: 13px;
-	}
-
-}
-
-a#back {
-	font-size: 30px;
-	padding-left: 20px;
-	position: absolute;
-	top: -20px;
-}
-
-a {
-	color: #7d9ada;
-}
-
-div#article_title .htb {
-	width: 31px;
-	position: relative;
-	top: 4px;
-	margin-right: 5px;
-	border-radius: 50px;
-	padding-bottom: 0px;
-	display: inline;
 }
 
 div.article_preview {
@@ -78,32 +33,6 @@ div.article_preview {
 		font-size: 19px;
 	}
 	.title a:visited {
-		color: #ad7dda;
+		color: #ad6cea;
 	}
-}
-
-h1#article_header {
-	word-wrap: break-word;
-	font-family: 'Merriweather', serif;
-	line-height: 36px;
-	color: #373d49;
-	margin-top: 10px;
-	display: inline;
-}
-
-div#login {
-	position: absolute;
-	bottom: -50px;
-	right: 0px;
-	margin: 20px;
-}
-
-#articlebuttons {
-	position: absolute;
-	bottom: -30px;
-	right: 50%;
-}
-
-div #login {
-	display: inline;
 }

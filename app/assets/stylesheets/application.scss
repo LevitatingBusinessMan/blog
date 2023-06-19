@@ -16,6 +16,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;900&display=swap');
+@import url('https://cdn.jsdelivr.net/npm/hack-font@3/build/web/hack-subset.css');
 
 html {
 	height: 100vh;
@@ -32,50 +33,56 @@ body {
 	margin-bottom: 60px;
 }
 
+div#content {
+	margin-left: 25%;
+	margin-right: 25%;
+	padding: 10px;
+	// margin-top: 20px;
+	min-height: 90%;
+	// padding-bottom: 40px;
+	position: relative;
 
-div.article_content {
-	word-wrap: break-word;
-	font-family: 'Merriweather', serif;
-	line-height: 20px;
-
-	h1, h2, h3, h4, h5, h6 {
-		color: #373d49;
-		padding-top: 15px;
+	div#dates p {
+		font-size: 13px;
+		margin: 0;
 	}
 
-	h3 {
-		font-size: 20px;
+	a#contact {
+		position: absolute;
+		right: 12px;
+		bottom: 13px;
 	}
 
 	a {
-		color: #7d9ada;
-	}
-
-
-	padding-bottom: 10%;
-
-	p code {
-		// color: #ea2626;
-		// background-color: #d2e6e6;
-		color: #ffc273;
-		background-color: #4c4f4f;
-		padding: 1px 7px 2px 7px;
-		border-radius: 7px;
-		margin: 0 1px 0 1px;
-	}
-	mark {
-		padding: 2px;
-		border-radius: 6px;
-	}
-
-	blockquote {
-		margin: 0;
-		padding: 0 0 0 10px;
-		border-left: 2px solid gray;
-		color: #464646;
-	}
-
-	pre code {
-		font-family: Hack;
+		color: #3663c6;
 	}
 }
+
+a#back {
+	font-size: 30px;
+	padding-left: 20px;
+	position: absolute;
+	top: -20px;
+}
+
+a {
+	color: #7d9ada;
+}
+
+div#login {
+	position: absolute;
+	bottom: -50px;
+	right: 0px;
+	margin: 20px;
+}
+
+#articlebuttons {
+	position: absolute;
+	bottom: -30px;
+	right: 50%;
+}
+
+div #login {
+	display: inline;
+}
+

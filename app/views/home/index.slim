@@ -5,7 +5,7 @@ div#content
 	- @articles.each do |article|
 		div.article_preview
 			div.title
-				== render "title_tags", article: article
+				== render "shared/title_tags", article: article
 				= link_to article.title.gsub(/<\w+>/,"").strip, article
 				- if !article.visible
 					span= " (invisible)"
@@ -16,4 +16,4 @@ div#content
 	div#articlebuttons
 		= link_to "New", new_article_path
 
-== render "user"
+== render "shared/user"

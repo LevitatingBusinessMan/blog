@@ -7,8 +7,6 @@ Rails.application.routes.draw do
 
   post "/authenticate", to: "home#authenticate"
 
-  get "/:id", to: "home#show"
-
   # Endpoint for rendering markdown
   post "/articles/carpet", to: "articles#carpet"
 

@@ -7,7 +7,7 @@ script hljs.highlightAll();
 
 div#content
 	div#article_title
-		== render "title_tags", article: @article
+		== render "shared/title_tags", article: @article
 		h1#article_header = @article.title.gsub(/<\w+>/,"").strip!
 
 	div.article_content == markdown(@article.body)
@@ -21,4 +21,4 @@ div#content
 	div#articlebuttons
 		= link_to "Edit", edit_article_path(@article)
 
-== render "user"
+== render "shared/user"

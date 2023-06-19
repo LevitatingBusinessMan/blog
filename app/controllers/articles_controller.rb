@@ -7,7 +7,11 @@ class ArticlesController < ApplicationController
   end
 
   def show
-    redirect_to controller: "home", action: "show"
+    if Article.exists?(id: params[:id], visible: session[:user] ? [true,false] : true)
+      @article = Article.find(params[:id])
+    else
+      redirect_to action: "index"
+    end
   end
 
   def create
