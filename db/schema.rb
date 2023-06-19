@@ -17,7 +17,6 @@ ActiveRecord::Schema.define(version: 2023_06_19_191300) do
     t.text "body"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.boolean "visibility"
     t.boolean "visible"
   end
 
