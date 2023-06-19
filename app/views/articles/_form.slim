@@ -17,4 +17,10 @@
 			.error
 			= message
 	div
+		=form.label "Visible?"
+		=form.check_box :visible
+		- article.errors.full_messages_for(:visible).each do |message|
+			.error
+			= message
+	div
 		=form.submit

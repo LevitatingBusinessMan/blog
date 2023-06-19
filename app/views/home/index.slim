@@ -5,7 +5,9 @@ div#content
 
 	- @articles.each do |article|
 		div.article_preview
-			div.title = link_to article.title, article 
+			div.title
+				= link_to article.title , article
+				span = !article.visible ? " (invisible)" : ""
 			= article.created_at.to_date.to_s
 			p.body_preview = article.body.length > 200 ? article.body[..196].chomp + "..." : article.body
 

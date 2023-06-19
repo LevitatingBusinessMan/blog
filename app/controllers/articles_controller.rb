@@ -44,9 +44,9 @@ class ArticlesController < ApplicationController
   def carpet
     render plain: helpers.markdown(request.body.read)
   end
-  
+
   private
     def article_params
-      params.require(:article).permit(:title, :body)
+      params.require(:article).permit(:title, :body, :visible)
     end
 end

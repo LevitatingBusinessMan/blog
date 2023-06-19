@@ -1,11 +1,11 @@
 class HomeController < ApplicationController
   
   def index
-    @articles = Article.all.order('created_at DESC')
+    @articles = Article.where(visible: session[:user] ? [true,false] : true).order('created_at DESC')
   end
 
   def show
-    if Article.exists?(params[:id])
+    if Article.exists?(id: params[:id], visible: session[:user] ? [true,false] : true)
       @article = Article.find(params[:id])
     else
       redirect_to action: "index"
