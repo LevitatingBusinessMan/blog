@@ -6,7 +6,7 @@ div#content
 		div.article_preview
 			div.title
 				- if article.title.start_with? "<HTB>"
-					= image_tag "htb", class:"htb"
+					= image_tag "htb.png", class:"htb"
 				= link_to article.title.gsub(/<\w+>/,"").strip, article
 				- if !article.visible
 					span= " (invisible)"
