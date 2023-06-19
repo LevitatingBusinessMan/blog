@@ -10,6 +10,11 @@ div#content
 
 	div.article_content == markdown(@article.body)
 
+	a#contact href="mailto:me@levitati.ng" me@levitati.ng
+	div#dates
+		p= "Created: " + @article.created_at.to_date.to_s
+		p= "Updated: " + @article.updated_at.to_date.to_s
+
 - if logged_in?
 	div#articlebuttons
 		= link_to "Edit", edit_article_path(@article)

@@ -21,7 +21,20 @@ div#content {
 	padding: 10px;
 	// margin-top: 20px;
 	min-height: 90%;
-	padding-bottom: 40px;
+	// padding-bottom: 40px;
+	position: relative;
+
+	div#dates p {
+		font-size: 13px;
+		margin: 0;
+	}
+
+	a#contact {
+		position: absolute;
+		right: 12px;
+		bottom: 13px;
+	}
+
 }
 
 a#back {
@@ -53,8 +66,9 @@ div.article_preview {
 h1#article_header {
 	word-wrap: break-word;
 	font-family: 'Merriweather', serif;
-	line-height: 20px;
+	line-height: 36px;
 	color: #373d49;
+	margin-top: 10px;
 }
 
 div#login {
