@@ -31,6 +31,7 @@ gem 'bootsnap', '>= 1.4.4', require: false
 group :production do
 	gem 'pg'
 	gem 'unicorn'
+	gem 'rack-mini-profiler', '~> 2.0'
 end
 
 group :development, :test do
