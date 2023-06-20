@@ -82,4 +82,8 @@ div.article_content {
 	img {
 		max-width: 100%;
 	}
+
+	pre code, img {
+		border-radius: 5px;
+	}
 }
