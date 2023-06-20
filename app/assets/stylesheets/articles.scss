@@ -31,9 +31,21 @@ div.article_content {
 	font-family: 'Merriweather', serif;
 	line-height: 20px;
 
-	h1, h2, h3, h4, h5, h6 {
+	.header {
 		color: #373d49;
 		padding-top: 15px;
+	}
+
+	.header .anchor {
+		text-decoration: none;
+		padding-left: 10px;
+		font-size: 24px;
+		visibility: hidden;
+		font-size: 27px;
+	}
+
+	.header:hover .anchor, .anchor:hover {
+		visibility: visible;
 	}
 
 	h3 {
