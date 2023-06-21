@@ -2,7 +2,8 @@ require 'redcarpet'
 
 class CustomHTMLRenderer < Redcarpet::Render::HTML
 	def header(text, header_level)
-		anchor = text.downcase.gsub(/\s+/, '-')
+		# Remove tags, replace whitespace by dash
+		anchor = text.downcase.gsub(/<.+\/?>/, '').strip.gsub(/\s+/, '-')
 		"<h#{header_level} id=#{anchor} class=\"header\">#{text}<a class=\"anchor\" href=\"##{anchor}\">📎</a></h#{header_level}>"
 	end
 end
