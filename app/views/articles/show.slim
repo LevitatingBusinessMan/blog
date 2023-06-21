@@ -10,7 +10,7 @@ div#content
 		== render "shared/title_tags", article: @article
 		h1#article_header = @article.title.gsub(/<\w+>/,"").strip
 
-	div.article_content == markdown(@article.body)
+	div.article_content == markdown(@article.body.gsub(/\r/,''))
 
 	a#contact href="mailto:me@levitati.ng" me@levitati.ng
 	div#dates
