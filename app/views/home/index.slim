@@ -6,7 +6,7 @@ div#content
 		div.article_preview
 			div.title
 				== render "shared/title_tags", article: article
-				= link_to article.title.gsub(/<\w+>/,"").strip, article
+				= link_to article.title_stripped, article
 				- if !article.visible
 					span= " (invisible)"
 			= article.created_at.to_date.to_s

@@ -1,5 +1,6 @@
 == render "shared/back"
 
+- content_for :title, @article.title_stripped
 = stylesheet_link_tag "dark"
 = javascript_include_tag "highlight.min.js"
 script hljs.highlightAll();
@@ -8,7 +9,7 @@ script hljs.highlightAll();
 div#content
 	div#article_title
 		== render "shared/title_tags", article: @article
-		h1#article_header = @article.title.gsub(/<\w+>/,"").strip
+		h1#article_header = @article.title_stripped
 
 	div.article_content == markdown(@article.body.gsub(/\r/,''))
 
