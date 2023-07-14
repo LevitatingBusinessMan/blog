@@ -1,7 +1,10 @@
 = stylesheet_link_tag "dark"
 
 div#content
-	h1#header LevitatingBusinessMan's blog
+	h1#header
+		| Levitating
+		span#businessman BusinessMan
+		| 's blog
 	- @articles.each do |article|
 		div.article_preview
 			div.title

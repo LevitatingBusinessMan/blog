@@ -33,6 +33,21 @@ body {
 	margin-bottom: 60px;
 }
 
+@media screen and (max-width: 800px) {
+	div#content {
+		margin: 0 !important;
+		padding: 10px !important;
+		border: 0 !important;
+		height: 100%;
+	}
+	#businessman {
+		display: none;
+	}
+	body {
+		margin: 0 !important;
+	}
+}
+
 div#content {
 	margin-left: 25%;
 	margin-right: 25%;
