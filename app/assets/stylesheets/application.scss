@@ -23,7 +23,8 @@ html {
 }
 
 body {
-	background-color: #f5f5f5;
+	// background-color: #f5f5f5;
+	background-image: url("wallpaper.jpg");
 	position: relative;
 	width: 100%;
 	margin-left: 0;
@@ -37,7 +38,7 @@ body {
 	div#content {
 		margin: 0 !important;
 		padding: 10px !important;
-		border: 0 !important;
+		border: none !important;
 		height: 100%;
 	}
 	#businessman {
@@ -45,7 +46,15 @@ body {
 	}
 	body {
 		margin: 0 !important;
+		background-color: #ddd5bb !important;
+		background-image: none;
 	}
+
+	a#back {
+		top: 9px !important;
+		right: 20px;
+	}
+
 }
 
 div#content {
@@ -56,6 +65,10 @@ div#content {
 	min-height: 90%;
 	// padding-bottom: 40px;
 	position: relative;
+	background-color: #ddd5bb !important;
+	//background-color: antiquewhite;
+	border: 1px solid #fbff00;
+	border-radius: 4px;
 
 	div#dates p {
 		font-size: 13px;
@@ -78,6 +91,7 @@ a#back {
 	padding-left: 20px;
 	position: fixed;
 	top: 26px;
+	z-index: 2;
 }
 
 a {
@@ -85,6 +99,7 @@ a {
 }
 
 div#login {
+	color: white;
 	position: absolute;
 	bottom: -50px;
 	right: 0px;
