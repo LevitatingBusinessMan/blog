@@ -89,3 +89,9 @@ div.article_content {
 		border-radius: 5px;
 	}
 }
+
+div.article_content.preview {
+	max-height: 100%;
+	overflow: scroll;
+}
+

@@ -32,6 +32,7 @@ body {
 	min-height: calc(100vh - 100px);
 	margin-top: 40px;
 	margin-bottom: 60px;
+	color: white;
 }
 
 @media screen and (max-width: 800px) {
@@ -58,6 +59,7 @@ body {
 }
 
 div#content {
+	color: black;
 	margin-left: 25%;
 	margin-right: 25%;
 	padding: 10px;
@@ -99,7 +101,6 @@ a {
 }
 
 div#login {
-	color: white;
 	position: absolute;
 	bottom: -50px;
 	right: 0px;
