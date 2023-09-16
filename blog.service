@@ -1,0 +1,13 @@
+[Unit]
+Description=Blog unicorn server
+After=network.target
+
+[Service]
+WorkingDirectory=/etc/webapps/blog
+Environment=RAILS_ENV=production
+Environment=PATH=/root/.local/share/gem/ruby/3.0.0/bin:/usr/bin
+Type=forking
+ExecStart=/usr/bin/bundle exec unicorn -D -E production -c /etc/webapps/blog/config/unicorn.rb
+
+[Install]
+WantedBy=multi-user.target
