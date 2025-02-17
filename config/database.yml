@@ -24,7 +24,7 @@ production:
   <<: *default
   adapter: postgresql
   database: blog
-  host: localhost
+  host: db.levitati.ng
   username: rein
   schema: blog
   password: <%= ENV['DATABASE_PASSWORD'] %>
