@@ -70,3 +70,9 @@ gem 'redcarpet'
 gem 'rdoc'
 
 gem "dartsass-rails", "~> 0.5.1"
+
+gem "ostruct", "~> 0.6.1"
+gem "logger", "~> 1.6"
+gem "mutex_m", "~> 0.3.0"
+gem "base64", "~> 0.2.0"
+gem "fiddle", "~> 1.1"
