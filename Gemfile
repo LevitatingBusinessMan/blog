@@ -71,7 +71,4 @@ gem "dartsass-rails", "~> 0.5.1"
 
 gem "ostruct", "~> 0.6.1"
 
-
 gem "propshaft", "~> 1.1"
-
-gem "jsbundling-rails", "~> 1.3"
